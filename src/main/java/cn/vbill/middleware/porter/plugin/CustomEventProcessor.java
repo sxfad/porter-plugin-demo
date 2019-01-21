@@ -42,4 +42,14 @@ public class CustomEventProcessor implements EventProcessor {
     public void process(ETLBucket etlBucket) {
 
     }
+
+    @Override
+    public void shutdown() {
+
+    }
+
+    @Override
+    public void start() {
+
+    }
 }

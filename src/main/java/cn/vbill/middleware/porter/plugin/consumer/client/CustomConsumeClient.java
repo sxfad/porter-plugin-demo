@@ -21,8 +21,6 @@ import cn.vbill.middleware.porter.common.client.AbstractClient;
 import cn.vbill.middleware.porter.common.client.PluginServiceClient;
 import cn.vbill.middleware.porter.common.consumer.ConsumeClient;
 import cn.vbill.middleware.porter.common.consumer.Position;
-import cn.vbill.middleware.porter.common.exception.ClientException;
-import cn.vbill.middleware.porter.common.exception.ConfigParseException;
 import cn.vbill.middleware.porter.common.exception.TaskStopTriggerException;
 import cn.vbill.middleware.porter.plugin.consumer.config.CustomConsumeConfig;
 
@@ -77,6 +75,11 @@ public class CustomConsumeClient  extends AbstractClient<CustomConsumeConfig> im
 
     @Override
     public <F, O> List<F> fetch(FetchCallback<F, O> fetchCallback) throws TaskStopTriggerException, InterruptedException {
+        return null;
+    }
+
+    @Override
+    public String getInitiatePosition(String s) {
         return null;
     }
 }
